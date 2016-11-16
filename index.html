@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vladica</title>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <iframe id="iframe" width="100%"
+            height="300px"
+            allowfullscreen
+            frameborder="0"
+            src="">
+        </iframe>
+
+        <script>
+            var url = location.href;
+            var image = url.split("image=")[1];
+            var src = "//storage.googleapis.com/vrview/index.html?image=" + image + "&is_stereo=true";
+                
+            var iframe = $('#iframe')[0];
+            iframe.setAttribute("src", src);
+        </script>
+    </body>
+</html>
