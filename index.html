@@ -3,7 +3,7 @@
     <head>
         <title>Vladica</title>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -18,6 +18,10 @@
             var url = location.href;
             var image = url.split("image=")[1];
             var src = "//storage.googleapis.com/vrview/index.html?image=" + image + "&is_stereo=true";
+            
+            console.info(url);
+            console.info(image);
+            console.info(src);
                 
             var iframe = $('#iframe')[0];
             iframe.setAttribute("src", src);
